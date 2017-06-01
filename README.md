@@ -13,7 +13,11 @@ After download don't forget to enter in the project dir.
 
 ### Getting started
 
+To get packages from the web:
+
 `npm install`
+
+To start server:
 
 `node index.js`
 
