@@ -32,8 +32,13 @@ db.serialize(function () {
 var express = require('express'), bodyParser = require('body-parser');
 var app = express()
 app.use(bodyParser.json());
+// app.use(function(req, res, next) {
+//   res.header("Access-Control-Allow-Origin", "*");
+//   res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+//   next();
+// });
 
-app.get('/heroes', function (req, res) {
+app.get('/heroes', function (req, res, next) {
   db.all("SELECT * FROM heroes", function (err, heroes) {
     res.json(heroes);
   });
