@@ -6,7 +6,7 @@ NodeJS project for Angular Tour of Heroes Tutorial
 
 `git clone https://github.com/fdoliveira/tour_of_heroes_node_js`
 
-After download don't forget to enter in the project dir
+After download don't forget to enter in the project dir.
 
 `cd tour_of_heroes_node_js`
 
