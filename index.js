@@ -1,3 +1,10 @@
+var fs = require('fs');
+var dir = './data';
+
+if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir);
+}
+
 var sqlite3 = require('sqlite3').verbose();
 var db = new sqlite3.Database('data/heroes.db');
 db.serialize(function () {
